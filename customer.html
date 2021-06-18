@@ -1,0 +1,86 @@
+<html>    
+    <head>    
+        <title>Customer Form</title>    
+
+        <style>
+    body {  
+    
+  font-family: Verdana, Arial, Helvetica, monospace;  
+  background-image:url(z3.jpeg);
+  background-repeat:no-repeat; 
+  
+}  
+  
+h3{  
+  text-align: center;  
+  font-family:Brush Script MT;
+  font-size:40px;
+   text-align:center;
+   color:black;
+}  
+label,input{
+color: black;\\rgba(10, 23, 200, 0.5); 
+text-align:center;
+\\margin-right:350px;
+}
+  .container{
+
+margin:auto;
+
+background:transparent;
+overflow:auto;
+font-size:10px;
+
+    border-radius: 15px;
+   text-align: center;
+   color:yellow;
+   width:500px;
+  height:260px;
+  \\margin-left:50px;
+  \\margin-right:350px;
+  
+ }
+input[type="submit"]{
+width:150px;
+
+}
+ input:hover{background-color:rgb(88, 233, 185);
+              color:rgb(184, 35, 35);}
+
+        </style>
+    </head>    
+    <body>    
+        
+        <h3>Customer Details</h3>    
+        <form name = "signup.html" action="signup.php" method = "post" enctype = "multipart/form-data" >    
+            <div class = "container">    
+                  
+                <b><label>Customer ID:</label>    
+                <input type ="number" name = "Customer ID" value = "" required/>  <br> <br>
+             
+                 
+                    <label>First name:</label>    
+                    <input type = "text" name = "First name" value = "" required/>  <br>  <br>
+                 
+                 
+                  <label>Last name:</label>    
+                  <input type="text" name = "last name" value = "" required/>  <br> <br> 
+               
+               
+                <label>DOB:</label>    
+                <input type="date" name = "dob" value = "" required/>  <br> <br> 
+               
+                <label>Adhaar:</label>    
+                <input type="number" name = "aadhar no" value = "" required placeholder="Adhaar number"/>   <br> <br>
+              
+                
+                
+                    <label>Property ID: </label>
+                 <input type="text" oninvalid="alert('You must fill out the form!');" required placeholder="Property ID"><br><br>
+                   <input type="submit" value="Submit"></b>
+                
+                
+</div>
+        </form>    
+    </body>    
+</html>  

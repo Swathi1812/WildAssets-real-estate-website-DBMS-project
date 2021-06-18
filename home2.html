@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+    WildAssets
+  </title>
+  <link rel = "icon" href ="properties.jpeg" type = "icon">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  .container{
+    padding-left: 40px;
+  }
+  h1{
+
+             font-size:200px; 
+            font-family: serif; 
+            color: transparent; 
+            text-align: center; 
+            font-family:Brush Script MT;
+	     font-style:italics;
+            animation: effect 2s linear infinite; 
+            
+        } 
+  
+        @keyframes effect { 
+            0% { 
+                background: linear-gradient( 
+                        #AB80FF, #FFFFFF); 
+                -webkit-background-clip: text; 
+            } 
+  
+            100% { 
+                background: linear-gradient( 
+                        #000000, #3875FF); 
+                -webkit-background-clip: text; 
+            } 
+        }
+  
+
+  h3 { 
+  display:block;
+  font-size:xx-large;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bolder;
+  font-style: oblique;
+  font-family: sans-serif;
+}
+img {
+  display: block;
+height:30%;
+width:60%;
+margin-left:180px
+ 
+}
+
+
+.buttons:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: rgba(8, 5, 61, 0.267); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+  </style>
+</head>
+<body>
+  
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        WildAssets
+      </div>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home2.html">Home</a></li>
+      
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="home.html">Log Out</a></li>
+
+      
+    </ul>
+<ul class="nav navbar-nav">
+<li class="active"><a href="aboutus.html">About Us</a></li>
+</ul>
+  </div>
+</nav>
+<div class="container">
+    <h1>WildAssets</h1></div>
+  
+
+<div class="container">
+  <div class = "buttons"><center>
+    <a class="btn btn-primary btn-lg" href="property.html">Properties</a>
+    <a class="btn btn-primary btn-lg" href="loan.html">Loans</a>
+    <a class="btn btn-primary btn-lg" href="register.html">Registrations</a>
+    <a class="btn btn-primary btn-lg" href="testimonial.html">Testimonials</a>
+    <a class="btn btn-primary btn-lg" href="landform.html">Transactions</a>
+    <a class="btn btn-primary btn-lg" href="cancellation.html">Cancellations</a></center>
+    
+</div>
+
+<div class ="container-fluid">
+<style>
+  body {
+background-color:rgb(0, 200, 800);
+}
+  .mySlides {display:none;}
+  </style>
+</div>
+  
+    
+  
+  
+<h3 class="Slideshow" style="text-align:center">Exclusive dream plots</h3> 
+ <div class="container">
+   
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1" ></li>
+      <li data-target="#myCarousel" data-slide-to="2" ></li>
+      <li data-target="#myCarousel" data-slide-to="3" ></li>
+       <li data-target="#myCarousel" data-slide-to="4" ></li>
+       <li data-target="#myCarousel" data-slide-to="5" ></li>
+       <li data-target="#myCarousel" data-slide-to="6" ></li>
+<li data-target="#myCarousel" data-slide-to="7" ></li>     
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item">
+        <img src="slide1.jpeg" alt="Los Angeles">
+          </div>
+
+      <div class="item">
+        <img src="slide2.jpeg" alt="Chicago">
+        
+      </div>
+    
+      <div class="item">
+        <img src="slide3.jpeg" alt="New york">
+           
+      </div>
+<div class="item">
+        <img src="z1.jpeg" alt="Chicago">
+        
+      </div>
+<div class="item">
+        <img src="z2.jpeg" alt="Chicago">
+        
+      </div>
+<div class="item">
+        <img src="z3.jpeg" alt="Chicago">
+        
+      </div>
+<div class="item">
+        <img src="z6.jpeg" alt="Chicago" >
+        
+      </div>
+<div class="item">
+        <img src="slide6.jpeg" alt="Chicago">
+        
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("item");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1500); // Change image every 2 seconds
+  }
+  </script>
+
+  <br>
+  <br>
+  </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-footer">
+        <div class="navbar-brand">
+          WildAssets
+        </div>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        
+      </ul>
+  <ul class="nav navbar-nav">
+  <li class="active"><a href="aboutus.html">About Us</a></li>
+  </ul>
+    </div>
+  </nav>
+ 
+ 
+  
+
+  
+
+</div>
+</body>
+</html>

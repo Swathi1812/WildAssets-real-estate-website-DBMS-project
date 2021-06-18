@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>    
+    <head>    
+        <title>Cancellation Form</title>    
+
+        <style>
+    
+  
+body {  
+    
+  font-family: Verdana, Arial, Helvetica, monospace;  
+  background-image:url(z1.jpeg);
+  background-repeat:no-repeat; 
+  
+}  
+  
+h3{  
+  text-align: center;  
+  font-family:Brush Script MT;
+  font-size:40px;
+   text-align:center;
+   color:black;
+}  
+label,input{
+color: black;\\rgba(10, 23, 200, 0.5); 
+text-align:center;
+\\margin-right:350px;
+}
+  .container{
+
+margin:auto;
+
+background:transparent;
+overflow:auto;
+font-size:10px;
+
+    border-radius: 15px;
+   text-align: center;
+   color:yellow;
+   width:500px;
+  height:220px;
+  \\margin-left:50px;
+  \\margin-right:350px;
+  
+ }
+ input[type="submit"]{
+width:150px;
+
+}
+input:hover{background-color:rgb(88, 233, 185);
+              color:rgb(184, 35, 35);}
+
+ 
+  </style>
+    </head>    
+    <body>    
+        
+        <h3>Cancellation</h3>  
+       <div class="container">  
+        <form action="cancellation.php" method = "post" >    
+               
+               <b> <label>Cancellation ID:</label>    
+                <input type ="text" name = "cancellationid"  required/> <br> <br>
+               
+                 <label>Cancellation date:</label>    
+                 <input type = "date" name = "cancellationdate"/>   <br> <br>
+                  
+                  <label>Refund amount:</label>    
+                  <input type="text" name = "amountrefunded"   placeholder="Refund amount"required/><br> <br>   
+              
+                  <label>Property ID: </lable>
+                 <input type="text"  name="propertyid" required><br><br>
+                
+                 <button type="submit">Submit</button></b>
+                  </form>
+                </div>
+
+        </form>    
+    </body>    
+</html>  
